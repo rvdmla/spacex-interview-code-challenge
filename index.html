@@ -1,0 +1,832 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <title>SpaceX App</title>
+
+    <!-- CSS Styles are inlined as they are minimal, this saves one HTTP request -->
+
+    <style>
+
+      body {
+
+        font: 100 normal 16px/1.75 'Helvetica Neue';
+        letter-spacing: 0.0125em;
+        text-align: center;
+        padding-bottom: 5em;
+        margin: 0;
+
+      }
+
+      h1, h3 {
+
+        font-weight: 100;
+
+      }
+
+      table {
+
+        border: 1px solid #000;
+        border-radius: 5px;
+        margin: 1em auto;
+
+      }
+
+      tr {
+
+        height: 3em;
+
+      }
+
+      td {
+
+        width: 3em;
+
+      }
+
+      td input {
+
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 0.5em;
+        height: 3em;
+        width: 3em;
+
+      }
+
+      .selected {
+
+        background-color: #f6f6f6;
+
+      }
+
+      i {
+
+        font-size: 0.75em;
+        display: block;
+        color: #999;
+
+      }
+
+      input {
+
+        font: 100 normal 14px/1 'Helvetica Neue';
+
+      }
+
+      #key {
+
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        line-height: 1em;
+        margin: 1em auto;
+        display: block;
+        padding: 1em;
+        width: 20em;
+
+      }
+
+      button {
+
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        line-height: 1em;
+        padding: 1em;
+        margin: 1em;
+
+      }
+
+      button[type=button] {
+
+        background-color: #91cc41;
+        color: #fff;
+
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <h1>Welcome!</h1>
+
+    <h3>Please start by loading some data.</h3>
+
+    <table>
+
+      <tr>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+      </tr>
+
+      <tr>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+      </tr>
+
+      <tr>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+      </tr>
+
+      <tr>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+      </tr>
+
+      <tr>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+      </tr>
+
+      <tr>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+      </tr>
+
+      <tr>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+      </tr>
+
+      <tr>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+        <td>
+
+          <input type="text">
+
+        </td>
+
+      </tr>
+
+    </table>
+
+    <i>Tip: You can select multiple cells to delete by dragging a selection and pressing the backspace key.</i>
+
+    <i>Tip: Valid expressions starting with an equal sign '=' will get evaluated. For example: =6*6</i>
+
+    <i>Tip: You can navigate between cells using the arrow keys.</i>
+
+    <form id='load'>
+
+      <input id="key" type="text" placeholder="Please enter your data key here..">
+
+      <button type="submit">Load Data</button>
+
+      <button type="button" id="save">Save Data</button>
+
+    </form>
+
+    <!-- Scripts are loaded at the end of the body tag to prevent blocking of rendering of above the fold content -->
+
+    <script src="jquery-2.1.1.min.js"></script>
+
+    <!-- JavaScript is inlined as it is minimal, this saves one more HTTP request -->
+
+    <script>
+
+      /* Test data and function */
+
+      var data = '[ [ 1 ] , [ 2 , 3 ] , [ 4 , 5 , 6 ] , [] , [ 7 , 8 , 9 , 0 ] , [] ]';
+
+      var data2 = '[ [] , [] , [] , [ 1 ] , [] , [] ]';
+
+      var load_data = function( input ) {
+
+        return window[ input ];
+
+      };
+
+      var save_data = function( key , data ) {
+
+        console.log( key , data );
+
+      };
+
+
+
+
+      /* All code is wrapped in a jQuery closure to prevent global scope polution and to make sure the DOM is loaded */
+
+      $(function() {
+
+        /* Load data function */
+
+        $('#load').submit( function( event ) {
+
+          event.preventDefault();
+
+          $( 'td input' ).val( '' );
+
+          /* This should be loaded asynchronously using a promise or a callback, but we don't know if load_data supports these */
+
+          var data = JSON.parse( load_data( $('#key').val() ) );
+
+          $( 'h3' ).fadeOut();
+
+          console.log( data );
+
+          for( var row in data ) {
+
+            var $row = $( 'tr:eq( ' + row + ' )' );
+
+            for( var cell in data[ row ] ) {
+
+              var $cell = $row.find( 'td:eq( ' + cell + ' )' );
+
+              var $input = $cell.find( 'input' );
+
+              $input.val( data[ row ][ cell ] );
+
+            }
+
+          }
+
+        });
+
+        /* Save data function */
+
+        $( '#save' ).click( function( event ) {
+
+          event.preventDefault();
+
+          var data = [];
+
+          $( 'tr' ).each( function( row ) {
+
+            console.log( row );
+
+            data[ row ] = [];
+
+            $( this ).children( 'td' ).each( function( cell ) {
+
+              data[ row ][ cell ] = $( this ).find( 'input' ).val();
+
+            });
+
+          });
+
+          save_data( $('#key').val() , JSON.stringify( data ) );
+
+        });
+
+        /* Arrow key navigation */
+
+        $( 'td input' ).keydown( function( event ){
+
+          if ( event.keyCode == 39 ) {
+
+            /* This should validate if there is a next cell, however this is not a breaking error */
+
+            $( this ).blur();
+
+            $( this ).parent().next().find( 'input' ).focus();
+
+          }
+
+          if ( event.keyCode == 37 ) {
+
+            $( this ).blur();
+
+            $( this ).parent().prev().find( 'input' ).focus();
+
+          }
+
+          if ( event.keyCode == 40 ) {
+
+            $( this ).blur();
+
+            /* There might be a more clever way of doing this with a single jQuery selector */
+
+            var index = $( this ).parent()[ 0 ].cellIndex;
+
+            $( this ).parent().parent().next().find( 'input:eq( ' + index + ' )' ).focus();
+
+          }
+
+          if ( event.keyCode == 38 ) {
+
+            $( this ).blur();
+
+            /* There might be a more clever way of doing this with a single jQuery selector */
+
+            var index = $( this ).parent()[ 0 ].cellIndex;
+
+            $( this ).parent().parent().prev().find( 'input:eq( ' + index + ' )' ).focus();
+
+          }
+
+        });
+
+        /* Compute formula */
+
+        $( 'td input' ).blur( function( event ) {
+
+          /* Also need to do this when enter is pressed */
+
+          if( $( this ).val()[ 0 ] === '=' ) {
+
+            var calculated = eval( $( this ).val().slice( 1 ) );
+
+            $( this ).val( calculated );
+
+          }
+
+        });
+
+        /* Select by dragging */
+
+        var start = {
+
+          x : 0,
+          y : 0
+
+        };
+
+        var end = {
+
+          x : 0,
+          y : 0
+
+        };
+
+        var isInBounds = function( start , end , offset , width , height ) {
+
+          if( start.x < offset.left + width && start.y < offset.top + height && end.x > offset.left && ( end.y + window.scrollY ) > offset.top ) {
+
+            return true;
+
+          }
+
+          if( start.x > offset.left && end.x < offset.left + width && start.y > offset.top && end.y < offset.top + height ) {
+
+            return true;
+
+          }
+
+          if( start.x > offset.left && end.x < offset.left + width && start.y < offset.top + height && end.y > offset.top ) {
+
+            return true;
+
+          }
+
+          if( start.x < offset.left + width && end.x > offset.left && start.y > offset.top && end.y < offset.top + height ) {
+
+            return true;
+
+          }
+
+        };
+
+        var dragging = false;
+
+        $( 'table' ).mousedown( function( event ) {
+
+          console.log( event );
+
+          start.x = event.clientX;
+          start.y = event.clientY;
+
+          dragging = true;
+
+        });
+
+        $( 'table' ).mouseup( function( event ) {
+
+          console.log( event );
+
+          end.x = event.clientX;
+          end.y = event.clientY;
+
+          dragging = false;
+
+        });
+
+        $( 'table' ).mousemove( function( event ) {
+
+          if( !dragging ) {
+
+            return false;
+
+          }
+
+          var position = {
+
+            x : event.clientX,
+            y : event.clientY
+
+          };
+
+          $( 'td input' ).each( function() {
+
+            if( isInBounds( start , position , $(this).offset() , $(this).outerWidth() , $(this).outerHeight() ) ) {
+
+              $( this ).addClass( 'selected' );
+
+            }
+
+          });
+
+        });
+
+        $( document ).keydown( function( event ) {
+
+          if ( event.keyCode == 8 ) {
+
+            $( '.selected' ).val( '' );
+
+          }
+
+        });
+
+        $( document ).click( function( event ) {
+
+          $( '.selected' ).removeClass( 'selected' );
+
+        });
+
+      });
+
+    </script>
+
+  </body>
+
+</html>
